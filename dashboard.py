@@ -225,6 +225,8 @@ def login():
                         st.session_state["page"] = "main"
                     else:
                         st.error("Invalid username or password")
+                        # Display static text
+        st.markdown("**Username:** `user1` **Password:** `123`")
 
 
 
