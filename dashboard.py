@@ -104,7 +104,7 @@ def home_page():
         if i < len(image_paths):  # Ensure the image index is within range
             img_base64 = get_base64_image(image_paths[i])
             if img_base64:
-                col.image(f"data:image/jpeg;base64,{img_base64}", use_column_width=True)
+                col.image(f"data:image/jpeg;base64,{img_base64}", use_container_width=True)
             else:
                 col.warning(f"Image {image_paths[i]} not found or cannot be loaded.")
     
@@ -115,7 +115,7 @@ def home_page():
         if i + 3 < len(image_paths):  # Ensure the image index is within range
             img_base64 = get_base64_image(image_paths[i + 3])
             if img_base64:
-                col.image(f"data:image/jpeg;base64,{img_base64}", use_column_width=True)
+                col.image(f"data:image/jpeg;base64,{img_base64}", use_container_width=True)
             else:
                 col.warning(f"Image {image_paths[i + 3]} not found or cannot be loaded.")
 
