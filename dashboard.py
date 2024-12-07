@@ -330,7 +330,7 @@ def main_app():
         filtered_df = df.copy()
 
     # Add space before the logout button to position it lower
-    st.sidebar.markdown("<br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
+    st.sidebar.markdown("<br><br><br><br><br><br>", unsafe_allow_html=True)
 
     # Logout Button at the bottom of the sidebar
     if st.sidebar.button("Logout"):
