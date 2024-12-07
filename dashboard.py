@@ -260,7 +260,6 @@ def main_app():
             st.stop()
     else:
         # Use default local file
-        os.chdir(os.path.dirname(__file__))
         df = pd.read_excel("Travelmechanic.xlsx", "Sheet1")  
         st.info("Using default file from local storage.")
 
