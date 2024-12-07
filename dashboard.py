@@ -216,6 +216,8 @@ def login():
         with col2:
             # Login Form - Ensure this part is centered
             with st.container():
+                # Display static text
+                st.markdown("**Username:** `user1` **Password:** `123`")
                 username = st.text_input("Username")
                 password = st.text_input("Password", type="password")
                 if st.button("Login"):
@@ -226,7 +228,7 @@ def login():
                     else:
                         st.error("Invalid username or password")
                         # Display static text
-        st.markdown("**Username:** `user1` **Password:** `123`")
+
 
 
 
