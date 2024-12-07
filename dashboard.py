@@ -1,5 +1,5 @@
 import streamlit as st
-
+import plotly.express as px
 import pandas as pd
 import os
 import warnings
@@ -260,7 +260,7 @@ def main_app():
             st.stop()
     else:
         # Use default local file
-        os.chdir(r"/mount/src/travelmechanic")
+        os.chdir(r"C:\Users\Angela\Downloads\BigData")
         df = pd.read_excel("Travelmechanic.xlsx", "Sheet1")  
         st.info("Using default file from local storage.")
 
